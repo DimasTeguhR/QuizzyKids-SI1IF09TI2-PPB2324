@@ -6,6 +6,7 @@ import 'package:quizzykids/bloc/login/login_cubit.dart';
 import 'package:quizzykids/bloc/register/register_cubit.dart';
 import 'package:quizzykids/routes/route.dart';
 import 'package:quizzykids/ui/home_screen.dart';
+import 'package:quizzykids/ui/login.dart';
 import 'package:quizzykids/ui/splash.dart';
 import 'firebase_options.dart';
 
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
             if(snapshot.hasData){
               return const HomeScreen();
             }else{
-              return const SplashScreen();
+              return const LoginScreen();
             }
           },
         ),
