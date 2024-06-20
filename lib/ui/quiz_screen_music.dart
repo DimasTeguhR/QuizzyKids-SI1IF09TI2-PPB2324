@@ -18,24 +18,24 @@ class _QuizScreenMusicState extends State<QuizScreenMusic> {
       'correctAnswer': 'Benar',
     },
     {
-      'question': 'Who is known as the King of Pop?',
-      'answers': ['Elvis Presley', 'Michael Jackson'],
-      'correctAnswer': 'Michael Jackson',
+      'question': 'Ampar Ampar Pisang\nmerupakan lagu daerah?',
+      'answers': ['Benar', 'Salah'],
+      'correctAnswer': 'Benar',
     },
     {
-      'question': 'Which band released the album "Abbey Road"?',
-      'answers': ['The Beatles', 'The Rolling Stones'],
-      'correctAnswer': 'The Beatles',
+      'question': 'Ampar Ampar Pisang\nmerupakan lagu daerah?',
+      'answers': ['Benar', 'Salah'],
+      'correctAnswer': 'Benar',
     },
     {
-      'question': 'What instrument does Yo-Yo Ma play?',
-      'answers': ['Piano', 'Cello'],
-      'correctAnswer': 'Cello',
+      'question': 'Ampar Ampar Pisang\nmerupakan lagu daerah?',
+      'answers': ['Benar', 'Salah'],
+      'correctAnswer': 'Benar',
     },
     {
-      'question': 'Who composed the Four Seasons?',
-      'answers': ['Mozart', 'Vivaldi'],
-      'correctAnswer': 'Vivaldi',
+      'question': 'Ampar Ampar Pisang\nmerupakan lagu daerah?',
+      'answers': ['Benar', 'Salah'],
+      'correctAnswer': 'Benar',
     },
   ];
 
