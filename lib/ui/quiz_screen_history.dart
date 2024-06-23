@@ -2,40 +2,50 @@ import 'package:flutter/material.dart';
 import 'package:quizzykids/styles/colors.dart';
 import 'package:quizzykids/styles/text_styles.dart';
 
-class QuizScreenMusic extends StatefulWidget {
+class QuizScreenHistory extends StatefulWidget {
   @override
-  _QuizScreenMusicState createState() => _QuizScreenMusicState();
+  _QuizScreenHistoryState createState() => _QuizScreenHistoryState();
 }
 
-class _QuizScreenMusicState extends State<QuizScreenMusic> {
+class _QuizScreenHistoryState extends State<QuizScreenHistory> {
   int _currentQuestionIndex = 0;
   int _score = 0;
 
   final List<Map<String, Object>> _questions = [
     {
-      'question': 'Ampar Ampar Pisang merupakan lagu daerah?',
-      'answers': ['Papua', 'Kalimantan Selatan', 'Aceh'],
-      'correctAnswer': 'Kalimantan Selatan',
+      'question': 'Koloseum Roma merupakan bangunan kuno yang ada di negara?',
+      'answers': ["Italia",
+      "Spanyol",
+      "france"],
+      'correctAnswer': 'Italia',
     },
     {
-      'question': 'Lagu Indonesia Pusaka diciptakan oleh?',
-      'answers': ["Ismail Marzuki", "W R Supratman", "Ibu Sud"],
-      'correctAnswer': 'Ismail Marzuki',
+      'question': 'Monumen Nasional Indonesia diresmikan pada tahun?',
+      'answers': ["1955",
+        "1965",
+        "1975"],
+      'correctAnswer': '1965',
     },
     {
-      'question': 'Lagu Tanah Airku diciptakan oleh',
-      'answers': ["Ibu Sud", "H Mutahar", "W R Supratman"],
-      'correctAnswer': 'Ibu Sud',
+      'question': 'Indonesia merdeka pada tanggal?',
+      'answers': ["17 Agustus 1945",
+        "20 November 1955",
+        "28 Oktober 1928"],
+      'correctAnswer': '17 Agustus 1945',
     },
     {
-      'question': 'Lagu Maju Tak Gentar dinyanyikan dengan',
-      'answers': ["Sedih", "Semangat", "Ceria"],
-      'correctAnswer': 'Semangat',
+      'question': 'Presiden Indonesia yang pertama bernama?',
+      'answers': ["Soeharto",
+        "Soekarno",
+        "Moh Hatta"],
+      'correctAnswer': 'Soekarno',
     },
     {
-      'question': 'Siswa kelas 5 memimpin teman-teman di kelasnya menyanyikan lagu wajib, siswa tersebut melakukan tugasnya sebagai seorang',
-      'answers': ["Komentator", "Dirigen", "pemimpin"],
-      'correctAnswer': 'Dirigen',
+      'question': 'Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan (BPUPKI) diketuai oleh?',
+      'answers': ["Dr Radjiman Wedyodiningrat",
+        "Ir Soekarno",
+        "Dr Mohammad Yamin"],
+      'correctAnswer': 'Dr Radjiman Wedyodiningrat',
     },
   ];
 
@@ -109,7 +119,7 @@ class _QuizScreenMusicState extends State<QuizScreenMusic> {
                     ),
                     child: Center(
                       child: Text(
-                        'Musik',
+                        'Sejarah',
                         style: kHeading7,
                       ),
                     ),

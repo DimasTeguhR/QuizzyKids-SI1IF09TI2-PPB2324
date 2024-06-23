@@ -6,7 +6,10 @@ import 'package:quizzykids/routes/route.dart';
 import 'package:quizzykids/styles/colors.dart';
 import 'package:quizzykids/styles/text_styles.dart';
 import 'package:quizzykids/ui/login.dart';
+import 'package:quizzykids/ui/quiz_screen_animal.dart';
+import 'package:quizzykids/ui/quiz_screen_history.dart';
 import 'package:quizzykids/ui/quiz_screen_music.dart';
+import 'package:quizzykids/ui/quiz_screen_sport.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -175,7 +178,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        (context) => Navigator.pushNamed(context, rQuiz);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => QuizScreenHistory()),
+                        );
                       },
                       child: Column(
                         children: [
@@ -204,7 +211,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => QuizScreenSport()),
+                        );
+                      },
                       child: Column(
                         children: [
                           Container(
@@ -226,7 +238,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => QuizScreenAnimal()),
+                        );},
                       child: Column(
                         children: [
                           Container(

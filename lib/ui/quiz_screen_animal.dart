@@ -2,40 +2,50 @@ import 'package:flutter/material.dart';
 import 'package:quizzykids/styles/colors.dart';
 import 'package:quizzykids/styles/text_styles.dart';
 
-class QuizScreenMusic extends StatefulWidget {
+class QuizScreenAnimal extends StatefulWidget {
   @override
-  _QuizScreenMusicState createState() => _QuizScreenMusicState();
+  _QuizScreenAnimalState createState() => _QuizScreenAnimalState();
 }
 
-class _QuizScreenMusicState extends State<QuizScreenMusic> {
+class _QuizScreenAnimalState extends State<QuizScreenAnimal> {
   int _currentQuestionIndex = 0;
   int _score = 0;
 
   final List<Map<String, Object>> _questions = [
     {
-      'question': 'Ampar Ampar Pisang merupakan lagu daerah?',
-      'answers': ['Papua', 'Kalimantan Selatan', 'Aceh'],
-      'correctAnswer': 'Kalimantan Selatan',
+      'question': 'Binatang apa yang memiliki leher panjang dan biasanya tinggal di danau atau sungai?',
+      'answers': ["Kucing",
+      "Kuda",
+      "Angsa"],
+      'correctAnswer': 'Angsa',
     },
     {
-      'question': 'Lagu Indonesia Pusaka diciptakan oleh?',
-      'answers': ["Ismail Marzuki", "W R Supratman", "Ibu Sud"],
-      'correctAnswer': 'Ismail Marzuki',
+      'question': 'Binatang apa yang memiliki taring tajam dan biasanya tinggal di hutan?',
+      'answers': ["Gajah",
+        "Singa",
+        "Jerapah"],
+      'correctAnswer': 'Singa',
     },
     {
-      'question': 'Lagu Tanah Airku diciptakan oleh',
-      'answers': ["Ibu Sud", "H Mutahar", "W R Supratman"],
-      'correctAnswer': 'Ibu Sud',
+      'question': 'Contoh hewan yang hidupnya di air dan darat adalah',
+      'answers': ["Udang",
+        "Ikan Mas",
+        "Katak"],
+      'correctAnswer': 'Katak',
     },
     {
-      'question': 'Lagu Maju Tak Gentar dinyanyikan dengan',
-      'answers': ["Sedih", "Semangat", "Ceria"],
-      'correctAnswer': 'Semangat',
+      'question': 'Hewan mamalia yang hidup di air, memiliki sirip',
+      'answers': ["Ikan",
+        "Kura Kura",
+        "Zebra"],
+      'correctAnswer': 'Ikan',
     },
     {
-      'question': 'Siswa kelas 5 memimpin teman-teman di kelasnya menyanyikan lagu wajib, siswa tersebut melakukan tugasnya sebagai seorang',
-      'answers': ["Komentator", "Dirigen", "pemimpin"],
-      'correctAnswer': 'Dirigen',
+      'question': 'Hewan pemakan rumput, berkaki empat, dan menghasilkan susu',
+      'answers': ["Badak",
+        "Sapi",
+        "Kuda"],
+      'correctAnswer': 'Sapi',
     },
   ];
 
@@ -109,7 +119,7 @@ class _QuizScreenMusicState extends State<QuizScreenMusic> {
                     ),
                     child: Center(
                       child: Text(
-                        'Musik',
+                        'Binatang',
                         style: kHeading7,
                       ),
                     ),

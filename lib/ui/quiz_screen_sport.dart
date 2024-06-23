@@ -2,40 +2,50 @@ import 'package:flutter/material.dart';
 import 'package:quizzykids/styles/colors.dart';
 import 'package:quizzykids/styles/text_styles.dart';
 
-class QuizScreenMusic extends StatefulWidget {
+class QuizScreenSport extends StatefulWidget {
   @override
-  _QuizScreenMusicState createState() => _QuizScreenMusicState();
+  _QuizScreenSportState createState() => _QuizScreenSportState();
 }
 
-class _QuizScreenMusicState extends State<QuizScreenMusic> {
+class _QuizScreenSportState extends State<QuizScreenSport> {
   int _currentQuestionIndex = 0;
   int _score = 0;
 
   final List<Map<String, Object>> _questions = [
     {
-      'question': 'Ampar Ampar Pisang merupakan lagu daerah?',
-      'answers': ['Papua', 'Kalimantan Selatan', 'Aceh'],
-      'correctAnswer': 'Kalimantan Selatan',
+      'question': 'Apa nama olahraga yang melibatkan kemampuan menembakkan panah ke target yang berjarak jauh?',
+      'answers': ["Bersepeda",
+      "Renang",
+      "Panahan"],
+      'correctAnswer': 'Panahan',
     },
     {
-      'question': 'Lagu Indonesia Pusaka diciptakan oleh?',
-      'answers': ["Ismail Marzuki", "W R Supratman", "Ibu Sud"],
-      'correctAnswer': 'Ismail Marzuki',
+      'question': 'Apa nama olahraga yang pemainnya harus memasukan bola ke ring?',
+      'answers': ["Sepak Bola",
+        "Basket",
+        "Voli"],
+      'correctAnswer': 'Basket',
     },
     {
-      'question': 'Lagu Tanah Airku diciptakan oleh',
-      'answers': ["Ibu Sud", "H Mutahar", "W R Supratman"],
-      'correctAnswer': 'Ibu Sud',
+      'question': 'Apa nama olahraga yang dimainkan dengan menggunakan raket dan shuttlecock?',
+      'answers': ["Bulu Tangkis",
+        "Basket",
+        "Lari"],
+      'correctAnswer': 'Bulu tangkis',
     },
     {
-      'question': 'Lagu Maju Tak Gentar dinyanyikan dengan',
-      'answers': ["Sedih", "Semangat", "Ceria"],
-      'correctAnswer': 'Semangat',
+      'question': 'Olahraga apa yang melibatkan menendang bola ke arah gawang lawan untuk mencetak gol?',
+      'answers': ["Sepak Bola",
+        "Voli",
+        "Renang"],
+      'correctAnswer': 'Sepak Bola',
     },
     {
-      'question': 'Siswa kelas 5 memimpin teman-teman di kelasnya menyanyikan lagu wajib, siswa tersebut melakukan tugasnya sebagai seorang',
-      'answers': ["Komentator", "Dirigen", "pemimpin"],
-      'correctAnswer': 'Dirigen',
+      'question': 'Apa nama olahraga yang dimainkan di atas papan selancar di atas ombak?',
+      'answers': ["Selancar",
+        "Sepeda",
+        "Bola Basket"],
+      'correctAnswer': 'Selancar',
     },
   ];
 
@@ -109,7 +119,7 @@ class _QuizScreenMusicState extends State<QuizScreenMusic> {
                     ),
                     child: Center(
                       child: Text(
-                        'Musik',
+                        'Olah Raga',
                         style: kHeading7,
                       ),
                     ),
